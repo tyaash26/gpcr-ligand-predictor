@@ -24,10 +24,8 @@ CODE2CLS = {i + 1: c for i, c in enumerate(CLASSES)}
 ACTIVE = set(range(1, 6))   # codes 1-5 = active classes; 6 = No Effect
 
 st.title('🧬 GPCR ligand activity predictor')
-st.caption("Predicts a compound's likely bioactivity class on GPCRs from the known labels of "
-           "its nearest chemical neighbours — a training-free reproduction of the "
-           "labels-as-features method of Hansson et al., Nat. Commun. 2025. "
-           "Data: Zenodo 12532113 (CC-BY 4.0). Reference set subsampled to ~40k compounds. "
+st.caption("Predicts a compound's likely bioactivity class on GPCRs from the known labels of its "
+           "nearest chemical neighbours. Reference set subsampled to ~40k compounds. "
            "Research / education only.")
 
 smi = st.text_input('Enter a SMILES', 'CC(=O)Oc1ccccc1C(=O)O')
@@ -96,3 +94,6 @@ with st.expander('How to read this'):
         "- Thresholds are rule-of-thumb and not yet calibrated against held-out accuracy.\n"
         "- The reference set is small-molecule bioactivity data from ChEMBL; large peptides and proteins are "
         "mostly outside it, so expect low similarity (and weak predictions) for those.")
+
+st.caption("(Method reproduced from Hansson et al., Nat. Commun. 2025 · "
+           "data: Zenodo 12532113, CC-BY 4.0)")
