@@ -95,5 +95,5 @@ with st.expander('How to read this'):
         "- The reference set is small-molecule bioactivity data from ChEMBL; large peptides and proteins are "
         "mostly outside it, so expect low similarity (and weak predictions) for those.")
 
-st.caption("(Method reproduced from Hansson et al., Nat. Commun. 2025 · "
+st.caption("(Reference: Hansson et al., Nat. Commun. 2025 · "
            "data: Zenodo 12532113, CC-BY 4.0)")
