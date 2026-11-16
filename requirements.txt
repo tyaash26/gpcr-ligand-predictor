@@ -1,0 +1,19 @@
+# stark-qa itself is installed with --no-deps (its full dep list is broken on py3.10/3.13).
+# These are the pieces actually needed to LOAD the data and run baselines.
+torch
+torch_geometric
+ogb
+gdown
+pandas
+huggingface_hub
+langchain-text-splitters
+nltk
+fuzzywuzzy
+langdetect
+bm25s
+torchmetrics
+transformers
+openai
+anthropic
+voyageai
+"setuptools<81"
